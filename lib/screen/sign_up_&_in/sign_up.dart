@@ -1,6 +1,5 @@
 import 'package:eyepax_assignment/constant/router_path.dart';
 import 'package:eyepax_assignment/models/user_model.dart';
-import 'package:eyepax_assignment/services/api_calling/save_signup_user.dart';
 import 'package:eyepax_assignment/services/local_storage_service.dart';
 import 'package:eyepax_assignment/services/secure_storage_service.dart';
 import 'package:flutter/material.dart';

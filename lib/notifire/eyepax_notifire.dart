@@ -10,10 +10,16 @@ class EyePaxNotifier extends ChangeNotifier {
   UserModel userData = UserModel();
   bool starterProgres = true;
   List<Article> articles = [];
+  String selectedCatogory = "Healthy";
 
   getNewsData(Result newsList) async {
     articles = newsList.articles!;
     print(' ++++++ Get News Data ++++++ ');
+    notifyListeners();
+  }
+
+  setSelectedCotegoryName(String catName) {
+    selectedCatogory = catName;
     notifyListeners();
   }
 

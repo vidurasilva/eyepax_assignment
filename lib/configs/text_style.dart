@@ -25,7 +25,7 @@ TextStyle searchBarTextstyle(BuildContext context) {
   );
 }
 
-//** Grid Data style **//
+//** See All style **//
 TextStyle seeAll() {
   return TextStyle(
     fontSize: 14,
@@ -34,39 +34,53 @@ TextStyle seeAll() {
   );
 }
 
-//** Topic Data style **//
-TextStyle topicTextstyle() {
+//** CategoryText **//
+TextStyle selectedCategoryText() {
   return TextStyle(
-    fontSize: 23,
+    fontSize: 20,
     fontWeight: FontWeight.bold,
-    color: AppColors.secondoryColor, //Colors.black,
+    color: AppColors.whiteColor, //Colors.black,
   );
 }
 
-//** Grade bar style **//
-TextStyle singalGradeCardTextstyle(BuildContext context) {
+TextStyle unSelectedCategoryText() {
   return TextStyle(
-    fontSize: 14,
+    fontSize: 20,
     fontWeight: FontWeight.bold,
-    color: Colors.white,
+    color: Colors.black, //Colors.black,
   );
 }
 
-//** Grade bar style **//
+//** News Box Style **//
+TextStyle byAuther() {
+  return TextStyle(
+      fontFamily: 'Nunito',
+      color: Colors.white,
+      fontWeight: FontWeight.w500,
+      fontSize: 16.0);
+}
+
+TextStyle titleStyle() {
+  return TextStyle(
+      fontFamily: 'Nunito',
+      color: Colors.white,
+      fontWeight: FontWeight.w600,
+      fontSize: 20.0);
+}
+
 TextStyle topCardTextstyle() {
   return TextStyle(
     fontSize: 14,
     fontWeight: FontWeight.bold,
-    color: Colors.white,
+    color: Colors.grey,
   );
 }
 
-//** QR bar style **//
-TextStyle topOnButtonTextstyle() {
+TextStyle descriptionStyle() {
   return TextStyle(
     fontSize: 14,
     fontWeight: FontWeight.bold,
-    color: AppColors.secondoryColor,
+    color: Colors.black,
   );
 }
 

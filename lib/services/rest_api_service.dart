@@ -5,6 +5,7 @@
 //use of http package to make the rest API call in the flutter.
 
 import 'dart:convert';
+import 'dart:io';
 import 'package:eyepax_assignment/configs/url.dart';
 import 'package:eyepax_assignment/services/internet_connection_checker.dart';
 import 'package:flutter/material.dart';
@@ -41,13 +42,8 @@ fetchProcessedData(String url,
 
 Future<String> fetchData(String url) async {
   try {
-    // final response =
-    //     await http.post(Uri.https(APIConstants.MAIN_BASE_URL, url), body: map);
-    final response = await http.get(
-      Uri.https(APIConstants.MAIN_BASE_URL, url),
-    );
-    print(
-        'response of ${APIConstants.MAIN_BASE_URL}$url is : ${response.body}');
+    final response = await http.get(Uri.parse(url));
+    print('response of $url is :\n ${response.body}');
     if (response.statusCode == 200) {
       final String responceString = response.body;
       return responceString;

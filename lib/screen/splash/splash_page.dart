@@ -1,6 +1,8 @@
 import 'dart:async';
+import 'package:eyepax_assignment/constant/app_constants.dart';
 import 'package:eyepax_assignment/screen/landing/home_main.dart';
 import 'package:eyepax_assignment/screen/landing/landing_page.dart';
+import 'package:eyepax_assignment/services/native_api_service_helper.dart';
 import 'package:eyepax_assignment/services/secure_storage_service.dart';
 import 'package:flutter/material.dart';
 import 'package:eyepax_assignment/configs/colors.dart';
@@ -19,6 +21,7 @@ class _SplashPageState extends State<SplashPage> {
   @override
   void initState() {
     scheduleMicrotask(() async {
+      await nativeApiServiceHelper(context, APICallName.NEWS);
       await Future.delayed(Duration(milliseconds: 2000));
       read(SharedPreferencesConstant.USER_ID).then((value) {
         if (value == null) {

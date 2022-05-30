@@ -26,7 +26,3 @@ nativeApiServiceHelper(BuildContext context, String apiCallType,
     default:
   }
 }
-
-
-// return Consumer<PCCNotifier>(builder: (context, showPCC, _) {
-    

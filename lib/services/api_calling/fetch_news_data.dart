@@ -4,7 +4,7 @@ import 'package:eyepax_assignment/configs/url.dart';
 
 Future<Result> fetchNewsData() async {
   Result result = Result();
-  await fetchProcessedData(APIConstants.NEWS_URL, success: (data) async {
+  await fetchProcessedData(APIConstants.MAIN_URL, success: (data) async {
     result = resultFromJson(data);
     return result;
   }, failed: (code, title, message) {

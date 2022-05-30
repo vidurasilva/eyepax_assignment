@@ -1,6 +1,8 @@
 import 'package:eyepax_assignment/constant/router_path.dart';
+import 'package:eyepax_assignment/models/artical_model.dart';
 import 'package:eyepax_assignment/screen/landing/home_main.dart';
 import 'package:eyepax_assignment/screen/landing/landing_page.dart';
+import 'package:eyepax_assignment/screen/news_page/singal_news_data.dart';
 import 'package:eyepax_assignment/screen/splash/splash_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -16,6 +18,11 @@ class RouterScreen {
 
       case ScreenConstant.toLandingPage:
         return MaterialPageRoute(builder: (_) => LandingPage());
+
+      case ScreenConstant.toSingalNewsPage:
+        final arguments = settings.arguments as Map;
+        final Article article = arguments['article'];
+        return MaterialPageRoute(builder: (_) => SingalNews(article: article));
 
       // case ScreenConstant.toClassPage:
       //   final arguments = settings.arguments as Map;

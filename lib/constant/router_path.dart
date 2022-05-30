@@ -2,7 +2,7 @@ class ScreenConstant {
   static const String toSignInMain = 'toSignInMain';
   static const String toHomeMain = 'toHomeMain';
   static const String toLandingPage = 'toLandingPage';
-  static const String toDashBoard = 'toSignUpMain';
+  static const String toSingalNewsPage = 'toSingalNewsPage';
   static const String toSplashPage = 'toSplashPage';
 
   static const String toClassPage = 'toClassPage';
