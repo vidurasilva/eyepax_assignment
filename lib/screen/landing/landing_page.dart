@@ -30,10 +30,6 @@ class _LandingPageState extends State<LandingPage> {
             icon: Icon(Icons.search, color: Colors.black),
             onPressed: () {},
           ),
-          IconButton(
-            icon: Icon(Icons.person, color: Colors.black),
-            onPressed: () {},
-          )
         ],
       ),
       body: Container(child: body[_selectedIndex]),

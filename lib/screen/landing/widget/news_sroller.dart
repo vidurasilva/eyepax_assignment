@@ -1,3 +1,4 @@
+import 'package:eyepax_assignment/configs/text_style.dart';
 import 'package:eyepax_assignment/constant/router_path.dart';
 import 'package:eyepax_assignment/models/artical_model.dart';
 import 'package:flutter/material.dart';
@@ -31,7 +32,12 @@ class NewsScroller extends StatelessWidget {
                     borderRadius: BorderRadius.all(Radius.circular(20.0))),
                 height: MediaQuery.of(context).size.height * 0.20,
                 // width: MediaQuery.of(context).size.width * 0.85,
-                child: Center(child: FittedBox(child: Text('KO $index'))),
+                child: Center(
+                    child: FittedBox(
+                        child: Text(
+                  articles![(articles!.length) - index - 1].title!,
+                  style: titleStyle(),
+                ))),
               ),
               onTap: () {
                 Navigator.pushNamed(context, ScreenConstant.toSingalNewsPage,
