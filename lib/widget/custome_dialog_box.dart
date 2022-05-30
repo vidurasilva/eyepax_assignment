@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 
 void openDialogCTX(ctx,
-    {String ?title, descriptions, cancel, confirmButton, final onPress}) {
+    {String? title, descriptions, cancel, confirmButton, final onPress}) {
   showCupertinoDialog(
       context: ctx,
       builder: (_) => CupertinoAlertDialog(
@@ -27,7 +27,7 @@ void openDialogCTX(ctx,
 }
 
 void openDialogCTXWithCancel(ctx,
-    {String ?title,
+    {String? title,
     descriptions,
     cancel,
     confirmButton,

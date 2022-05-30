@@ -85,6 +85,11 @@ class DBHelper {
     await dbClient.update('Users', {'isEnable': '1'},
         where: "email = ? ", whereArgs: [email]);
   }
+
+  Future<void> deleteAllUsers() async {
+    var dbClient = await db;
+    await dbClient.delete('Users', where: null, whereArgs: null);
+  }
   //************************* End manege User details from data base ***********************************//
 
 }
