@@ -31,6 +31,7 @@ dependencies:
   scroll_snap_list: ^0.8.6
   dot_navigation_bar: ^1.0.1+4
   shared_preferences: ^2.0.7
+  simple_speed_dial: ^0.1.7
   blurrycontainer: ^1.0.2
   connectivity: ^3.0.6
   fluttertoast: ^8.0.2

@@ -1,6 +1,7 @@
 import 'package:eyepax_assignment/configs/colors.dart';
 import 'package:eyepax_assignment/screen/landing/home_main.dart';
 import 'package:dot_navigation_bar/dot_navigation_bar.dart';
+import 'package:eyepax_assignment/screen/landing/widget/profile_page.dart';
 import 'package:flutter/material.dart';
 
 class LandingPage extends StatefulWidget {
@@ -12,7 +13,11 @@ class LandingPage extends StatefulWidget {
 
 class _LandingPageState extends State<LandingPage> {
   int _selectedIndex = 0;
-  List<Widget> body = [HomeMain(), HomeMain(), Text('2')];
+  List<Widget> body = [
+    HomeMain(),
+    HomeMain(),
+    Profile(),
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -71,5 +76,3 @@ class _LandingPageState extends State<LandingPage> {
     );
   }
 }
-
-enum _SelectedTab { home, favorite, search, person }

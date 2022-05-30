@@ -31,9 +31,12 @@ class _SingalNewsState extends State<SingalNews> {
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         backgroundColor: AppColors.primaryColor,
-        child: Icon(Icons.favorite),
+        child: Padding(
+          padding: const EdgeInsets.all(10.0),
+          child: Icon(Icons.favorite),
+        ),
       ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
       body: SingleChildScrollView(
         child: Column(
           children: [

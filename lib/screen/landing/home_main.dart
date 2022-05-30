@@ -4,7 +4,7 @@ import 'package:eyepax_assignment/constant/app_constants.dart';
 import 'package:eyepax_assignment/models/artical_model.dart';
 import 'package:eyepax_assignment/notifire/eyepax_notifire.dart';
 import 'package:eyepax_assignment/screen/landing/widget/category_scroller.dart';
-import 'package:eyepax_assignment/screen/landing/widget/get_news_data.dart';
+import 'package:simple_speed_dial/simple_speed_dial.dart';
 import 'package:eyepax_assignment/screen/landing/widget/letest_news_scroller.dart';
 import 'package:eyepax_assignment/screen/landing/widget/news_sroller.dart';
 import 'package:eyepax_assignment/configs/colors.dart';
